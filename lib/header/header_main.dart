@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../routes/notice/notice.dart';
 import '../routes/profile/profile_main.dart';
+import '../routes/notice/notice.dart';
 
 class HeaderMain extends StatelessWidget with PreferredSizeWidget {
   final String headerTitle;

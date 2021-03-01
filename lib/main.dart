@@ -13,7 +13,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   final _primaryColor = Colors.amber[100]; //primaryColorを指定
-  final _primaryAccentColor = Colors.orangeAccent; //primaryAccentColorを指定
+  // final _primaryAccentColor = Colors.orangeAccent; //primaryAccentColorを指定
 
   final List _pageList = [
     HomeMain(),
