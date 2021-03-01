@@ -6,6 +6,15 @@ import '../routes/notice/notice.dart';
 class HeaderMain extends StatelessWidget with PreferredSizeWidget {
   final String headerTitle;
   HeaderMain({this.headerTitle}); //ヘッダータイトルを変更できるようにする
+
+  // 料金プラン
+  final Map planList = {
+    '0': 'Free', //無料
+    '1': 'Light', //安い
+    '2': 'Basic', //中
+    '3': 'Premium', //高い
+  };
+
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 
@@ -13,7 +22,17 @@ class HeaderMain extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: false, // 中央寄せを解除
-      title: Text(headerTitle),
+      title: Row(
+        //ロゴ画像と料金プランを表示する
+        children: [
+          Image.network(
+            'https://cdn.icon-icons.com/icons2/1584/PNG/512/3721679-youtube_108064.png',
+            fit: BoxFit.contain,
+            height: 32,
+          ),
+          Text(planList['2']),
+        ],
+      ),
       actions: [
         IconButton(
           icon: Icon(Icons.notifications_outlined),
