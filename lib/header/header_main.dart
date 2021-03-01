@@ -30,6 +30,7 @@ class HeaderMain extends StatelessWidget with PreferredSizeWidget {
         IconButton(
           // icon: Icon(MdiIcons.accountCircleOutline),
           icon: ClipRRect(
+            // アイコンを丸くする
             borderRadius: BorderRadius.circular(100),
             child: Image.network(
                 'https://pbs.twimg.com/profile_images/1356263946638950410/s72cF6s2.jpg'),
