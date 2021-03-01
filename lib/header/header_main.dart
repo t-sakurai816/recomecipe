@@ -4,8 +4,8 @@ import '../routes/profile/profile_main.dart';
 import '../routes/notice/notice.dart';
 
 class HeaderMain extends StatelessWidget with PreferredSizeWidget {
-  final String headerTitle;
-  HeaderMain({this.headerTitle}); //ヘッダータイトルを変更できるようにする
+  // final String headerTitle;
+  // HeaderMain({this.headerTitle}); //ヘッダータイトルを変更できるようにする
 
   // 料金プラン
   final Map planList = {
